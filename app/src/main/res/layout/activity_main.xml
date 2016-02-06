@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="Open Sans Regular"
+        android:text="Weight(lbs):"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/recon_jet_white" />
+
+    <TextView
+        android:id="@+id/input_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/input_waist"
+        android:layout_alignTop="@+id/weight"
+        android:fontFamily="Open Sans Regular"
+        android:gravity="center"
+        android:text="150"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/recon_jet_white" />
+
+
+    <TextView
+        android:id="@+id/waist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weight"
+        android:layout_below="@+id/weight"
+        android:layout_marginTop="22dp"
+        android:fontFamily="Open Sans Regular"
+        android:text="Waist Diameter(inch):"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/recon_jet_white" />
+
+    <TextView
+        android:id="@+id/input_waist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/waist"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/waist"
+        android:fontFamily="Open Sans Regular"
+        android:text="30"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/recon_jet_white" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/calculate"
+        android:layout_toLeftOf="@+id/input_waist"
+        android:fontFamily="Open Sans Regular"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/recon_jet_white"
+        tools:text="result" />
+
+    <Button
+        android:id="@+id/calculate"
+        style="?android:attr/buttonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/waist"
+        android:layout_below="@+id/waist"
+        android:layout_marginTop="22dp"
+        android:textColor="@color/recon_jet_white"
+        android:text="calculate" />
+
+
+    </RelativeLayout>
